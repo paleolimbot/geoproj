@@ -1,0 +1,2 @@
+PKG_CXXFLAGS = -I../src
+CXX_STD=CXX11
