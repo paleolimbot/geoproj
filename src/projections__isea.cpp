@@ -288,7 +288,7 @@ static struct isea_pt isea_triangle_xy(int triangle)
         break;
     default:
         /* should be impossible */
-        exit(EXIT_FAILURE);
+        throw std::runtime_error("Should be impossible");
     };
     c.x *= Rprime;
     c.y *= Rprime;
@@ -478,10 +478,7 @@ static int isea_snyder_forward(struct isea_geo * ll, struct isea_pt * out)
      * any triangle
      */
 
-    fprintf(stderr, "impossible transform: %f %f is not on any triangle\n",
-            PJ_TODEG(ll->lon), PJ_TODEG(ll->lat));
-
-    exit(EXIT_FAILURE);
+    throw std::runtime_error("impossible transform: point is not on any triangle\n");
 
     /* not reached */
     return 0;       /* suppresses a warning */

@@ -8,6 +8,14 @@
 \description{
 Provides low-level access to the PROJ library.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/paleolimbot/geoproj}
+  \item Report bugs at \url{https://github.com/paleolimbot/geoproj/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Dewey Dunnington \email{dewey@fishandwhistle.net} (\href{https://orcid.org/0000-0002-9415-4582}{ORCID})
 

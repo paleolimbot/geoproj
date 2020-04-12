@@ -19,3 +19,5 @@ Imports:
     Rcpp
 URL: https://github.com/paleolimbot/geoproj
 BugReports: https://github.com/paleolimbot/geoproj/issues
+Suggests: 
+    testthat (>= 2.1.0)

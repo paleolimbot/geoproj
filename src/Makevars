@@ -1,2 +1,3 @@
 PKG_CXXFLAGS = -I../src
+PKG_LIBS= -lsqlite3
 CXX_STD=CXX11

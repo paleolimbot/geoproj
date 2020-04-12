@@ -163,8 +163,7 @@ PROJVALUE pj_param (projCtx ctx, paralist *pl, const char *opt) {
     type = *opt++;
 
     if (nullptr==strchr ("tbirds", type)) {
-        fprintf(stderr, "invalid request to pj_param, fatal\n");
-        exit(1);
+        throw std::runtime_error("invalid request to pj_param, fatal");
     }
 
     pl = pj_param_exists (pl, opt);
