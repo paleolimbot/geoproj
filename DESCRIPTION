@@ -17,3 +17,5 @@ LinkingTo:
     Rcpp
 Imports: 
     Rcpp
+URL: https://github.com/paleolimbot/geoproj
+BugReports: https://github.com/paleolimbot/geoproj/issues
