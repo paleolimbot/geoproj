@@ -55,6 +55,12 @@ stopifnot(
   file.copy(source_files$path, source_files$final_path)
 )
 
+# modify source files (not automated yet)
+# - pragmas (check with  tools:::.check_pragmas())
+# - calls to exit()
+# - stderr, stdout, putchar
+# - fprintf\(stderr,\s* -> REprintf(
+
 stop("stop!")
 
 unlink("data-raw/proj-source.tar.gz")

@@ -365,7 +365,7 @@ template <typename T> struct hash<::dropbox::oxygen::nn<T>> {
      * compiled out. */                                                        \
     assert(p &&#_e " must not be null");                                       \
     if (!p)                                                                    \
-      std::abort();                                                            \
+      throw std::runtime_error("assertion failed");                            \
     return dropbox::oxygen::nn<                                                \
         typename std::remove_reference<decltype(p)>::type>(                    \
         dropbox::oxygen::i_promise_i_checked_for_null, std::move(p));          \
