@@ -57,7 +57,7 @@ stopifnot(
 
 # modify source files (not automated yet)
 # - pragmas (check with  tools:::.check_pragmas())
-# - calls to exit()
+# - calls to exit(), abort()
 # - stderr, stdout, putchar
 # - fprintf\(stderr,\s* -> REprintf(
 
